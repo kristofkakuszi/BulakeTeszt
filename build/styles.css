@@ -20,6 +20,16 @@ html {
  * Remove the margin in all browsers.
  */
 
+ h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
 body {
   margin: 0;
 }
@@ -37,14 +47,23 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
+header{
+  display: block;
+}
+ header.bulake-header {
+  background-color: #ffffff;
+  height: 120px;
+}
 
+
+
+/*navbar*/
 .bulake-navbar-dark {
   background: #ffc042;
   position: relative;
   left: 0;
   right: 0;
   z-index: 3;
-
   text-align:center;
 }/*
 ul { 
@@ -61,7 +80,8 @@ li {
   padding: 15px 0;
 }
 */
-a {
+/*navbar link*/
+.nav-link {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -71,7 +91,7 @@ a {
   padding: 15px 20px;
   position: relative;
 }
-a:after {    
+.nav-link:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -83,10 +103,11 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover:after { 
+.nav-link:hover:after { 
   width: 100%; 
   left: 0; 
 }
+/*footer*/
 .bulake-footer{
     background: #2C5F1F;
     color: #ffffff !important;
@@ -107,6 +128,83 @@ a:hover:after {
   display: table;
   clear: both;
 }
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/*kep*/
+.bg-image, .bulake-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 
+  
+}
+/*gomb*/
+.btn.btn-secondary {
+  background: #ffc042;
+  border-color: #ffc042;
+  color: #050505;
+}
+.btn.btn-sm {
+  padding: 10px 20px;
+  font-size: 12px;
+}
+.btn {
+  border-radius: 20px;
+  padding: 20px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.btn-group-sm>.btn, .btn-sm {
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+}
+.bulake-section.overlay {
+  position: relative;
+}
+
+.bulake-section.overlay .heading {
+  color: #fff;
+  font-size: 50px;
+}
+
+
+
+.bulake-section,
+.bulake-footer {
+  padding: 7em 0 7em 0;
+}
+
+.bulake-section.bulake-slant,
+.bulake-footer.bulake-slant {
+  padding: 7em 0 22em 0;
+}
+
+.bulake-section .bulake-heading,
+.bulake-footer .bulake-heading {
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+
 
 /* Grouping content
    ========================================================================== */
