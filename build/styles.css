@@ -370,7 +370,12 @@ bulake-navbar-dark .navbar-nav>.nav-item.bulake-cta a {
 
 
 
-
+.blogok .date{
+  font-size: 1.25rem;
+}
+.blogok .bejegyzes{
+  color: #2C5F1F;
+}
 
 
 /*footer*/
@@ -643,7 +648,11 @@ clear: both;
   line-height: 1.5;
 }
 
-
+.blogvideo{
+  background: #2C5F1F;
+  color: white;
+  margin-bottom: 5rem;
+}
 
 
 
@@ -687,11 +696,7 @@ clear: both;
  * 2. Show the overflow in Edge and IE.
  */
 
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-}
+
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -1088,7 +1093,7 @@ html {
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: #e2e8f0; /* 2 */
+   /* 2 */
 }
 
 /*
@@ -6915,7 +6920,16 @@ video {
 }
 
 .h-64 {
-  height: 16rem;
+  height: 56rem;
+  background: #d0eb92;
+}
+
+.h-68{
+  height: 60rem;
+  position: relative;
+  top: -64px;
+  
+  
 }
 
 .h-auto {
