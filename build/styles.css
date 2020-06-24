@@ -654,9 +654,49 @@ clear: both;
   margin-bottom: 5rem;
 }
 
+.fooldalnav{
+  background-color: #2C5F1F;
+}
+.elsoszlop{
+  background: #d0eb92;
+  
+}
+.navigacio{
+  color: #2C5F1F;
+}
+
+.bulake-contact h1,h5{
+  color: #2C5F1F;
+}
 
 
 
+ul.breadcrumb {
+  position: relative;
+  background-color: #2C5F1F;
+  
+  
+}
+
+ul.breadcrumb li.breadcrumb-item {
+  position: relative;
+  left: 15px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+ul.breadcrumb li.breadcrumb-item a {
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 
 
