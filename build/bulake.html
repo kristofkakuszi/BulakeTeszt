@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    
 
     
     <title>Bulake</title>
@@ -90,6 +91,8 @@
                             <label for="s" class="sr-only">Keresendő szó:</label>
                             <button class="icon submit">
                                 <span class="icon-magnifying-glass">
+                                    <i class="fa fa-search"></i>
+                                    
                                 <span class="sr-only">Kereső gomb</span></span>
                             </button>
                             <input type="search" name="search" class="form-control" id="s" minlength="3" placeholder="Keresés">
@@ -99,6 +102,49 @@
             </div>
         </div>
     </nav>
+
+
+
+    
+      
+      <nav class="px-8 pt-2 shadow-md navbar-bulake">
+        <div class="-mb-px flex justify-center">
+            <a class="no-underline text-teal-dark border-b-2 border-teal-dark uppercase tracking-wide font-bold text-xs py-3 mr-12" href="#">
+                BEMUTATKOZÁS
+            </a>
+            <a class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-bold text-xs py-3 mr-12" href="#">
+                LÁTÁSSÉRÜLTEKNEK
+            </a>
+            <a class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-bold text-xs py-3 mr-12" href="#">
+                INTÉZMÉNYEKNEK
+            </a>
+            <a class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-bold text-xs py-3 mr-12" href="#">
+                MASSZÁZS
+            </a>
+            <a class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-bold text-xs py-3 mr-12" href="#">
+                MÉDIA
+            </a>
+            <a class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-bold text-xs py-3 mr-12" href="#">
+                TÁMOGATÁS
+            </a>
+            <a class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-bold text-xs py-3 mr-12" href="#">
+                KÖZZÉTÉTEL
+            </a>
+            <form action="https://bulake.hu" class="bulake-search-form mb-sm-0 mb-3">
+                <div class="form-group" role="search">
+                    <label for="s" class="sr-only">Keresendő szó:</label>
+                    <button class="icon submit">
+                        <span class="icon-magnifying-glass">
+                            <i class="fa fa-search"></i>
+                            
+                        <span class="sr-only">Kereső gomb</span></span>
+                    </button>
+                    <input type="search" name="search" class="form-control" id="s" minlength="3" placeholder="Keresés">
+                </div>
+            </form>
+        </div>
+   </nav>
+      
 
 
 
@@ -592,143 +638,23 @@
     </div>
 </br>
     <img src="https://bulake.hu/theme/bulake/img/wcag2AA.jpg" style="width:75px;display:block;margin: 0 auto;" alt="WCAG AA logo">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function() {
+  $(".nav-toggler").each(function(_, navToggler) {
+    var target = $(navToggler).data("target");
+    $(navToggler).on("click", function() {
+      $(target).animate({
+        height: "toggle"
+      });
+    });
+  });
+});
+
+</script>
 </footer>
-<!--
-<div class="container">
-    <div class="row">
-            <div class="flex content-start flex-wrap h-48">
-                <div class="w-1/3 p-2">
-                  <div class="text-gray-700 text-center  p-2">
-                    <h3 class="text-xl font-semibold">BEMUTATKOZÁS</h3>
-                    <ul class="bulake-footer-links">
-                        <li class="mt-2">
-                            Történetünk
-                        </li>
-                        <li class="mt-2">
-                            Szervezeti Felépítés
-                        </li>
-                        <li class="mt-2">
-                            Foglalkoztatás
-                        </li>
-                        <li class="mt-2">
-                            Elérhetőség
-                        </li>
-                </ul>
-                  </div>
-                </div>
-                <div class="w-1/3 p-2">
-                  <div class="text-gray-700 text-center  p-2">
-                    <h3  class="text-xl font-semibold">LÁTÁSSÉRÜLTEKNEK</h3>
-                    <ul class="bulake-footer-links ">
-                        <li class="mt-2">
-                            Szociális tevékenységek
-                        </li>
-                        <li class="mt-2">
-                            Programok tagjainknak
-                        </li>
-                        <li class="mt-2">
-                            Elemi rehabilitáció
-                        </li>
-                        <li class="mt-2">
-                            Érdekképviselet
-                        </li>
-                        <li class="mt-2">
-                            Informatika
-                        </li>
-                        <li class="mt-2">
-                            Jogszabály gyűjtemény
-                        </li>
-                </ul>
-                  </div>
-                </div>
-                <div class="w-1/3 p-2">
-                  <div class="text-gray-700 text-center  p-2"><h3 class="text-xl font-semibold">INTÉZMÉNYEKNEK</h3>
-                    <ul class="bulake-footer-links">
-                        <li class="mt-2">
-                            Lássunk másként
-                        </li>
-                        <li class="mt-2">
-                            Iskolaprogram
-                        </li>
-                        <li class="mt-2">
-                            Céges tréning
-                        </li>
-                        <li class="mt-2">
-                            Akadálymentesítés
-                        </li>
-                        <li class="mt-2">
-                            Munkahelyi masszázs
-                        </li>
-                </ul></div>
-                </div>
-                <div class="w-1/3 p-2">
-                  <div class="text-gray-700 text-center  p-2"> <h3  class="text-xl font-semibold">MASSZÁZS</h3>
-                    <ul class="bulake-footer-links">
-                        <li class="mt-2">
-                            Kínálatunk
-                        </li>
-                        <li class="mt-2">
-                            Helyszínek - Időpontfoglalás
-                        </li>
-                        <li class="mt-2">
-                            Tudnivalók
-                        </li>
-                        <li class="mt-2">
-                            Állások, képzések
-                        </li>
-                </ul></div>
-                </div>
-                <div class="w-1/3 p-2">
-                  <div class="text-gray-700 text-center  p-2"><h3  class="text-xl font-semibold">MÉDIÁK</h3>
-                    <ul class="bulake-footer-links">
-                        <li class="mt-2">
-                            Írott sajtó
-                        </li>
-                        <li class="mt-2">
-                            Rádió felvétel
-                        </li>
-                        <li class="mt-2">
-                            Televíziós felvétel
-                        </li>
-                </ul></div>
-                </div>
-                <div class="w-1/3 p-2">
-                    <div class="text-gray-700 text-center  p-2"> <h1  class="text-xl font-semibold">ADATKEZELÉS</h1>
-                        <ul class="bulake-footer-links">
-                            <li class="mt-2">
-                                Impresszum
-                            </li>
-                            <li class="mt-2">
-                                Adatkezelési-tájékoztató
-                            </li>
-                            <li class="mt-2">
-                                Televíziós felvétel
-                            </li>
-                    </ul>
-                    <h3 class="heading mt-2">
-                        Közösségi felületeink
-                    </h3>
-                    <ul class="bulake-footer-social">
-                        <li>
-                            <a href="https://hu-hu.facebook.com/bulake.hu/" target="_blank"><span class="icon-facebook"></span></a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/channel/UCcmW_--MzlrT5YQQv3y_IbA" target="_blank"><span class="icon-youtube"></span></a>
-                        </li>
-                    </ul></div>
-                  </div>
-              </div>
-            </div>  
-    </div>
-    <div class="row bulake-copyright">
-        <div class="text-center">
-            <p class=""> 2020 © Buda-Környéki Látássérültek Közhasznú Egyesülete | Bankszámlaszám: K&amp;H Bank 10403136-49565749-49541008 - Adószám: </br> 18711389-1-13  |
-            Fejlesztő: HappyHelp Kft.</p>
-        </div>        
-</div>
-</br>
-<img src="https://bulake.hu/theme/bulake/img/wcag2AA.jpg" style="width:75px;display:block;margin: 0 auto;" alt="WCAG AA logo">
-    -->
+
 
 
 
