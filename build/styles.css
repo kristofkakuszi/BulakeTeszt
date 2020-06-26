@@ -35,6 +35,12 @@ html {
   font-weight: bold;
 }
 
+
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
@@ -197,6 +203,11 @@ a.logo-text span {
   text-transform: uppercase;
 }
 
+ .bulake-search-form .form-group {
+  position: relative;
+  margin-bottom: 0 !important;
+}
+
 .bulake-navbar-dark .navbar-nav li.nav-item a {
   margin-left: 10px;
   margin-right: 10px;
@@ -275,7 +286,7 @@ bulake-navbar-dark .navbar-nav>.nav-item.bulake-cta a {
   line-height: 0;
 }
 
-.bulake-navbar-dark .bulake-search-form .form-group .form-control {
+.bulake-search-form .form-group .form-control {
   color: #fff !important;
   border: none;
   height: 45px;
@@ -2461,6 +2472,7 @@ video {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+  
 }
 
 .not-sr-only {
@@ -14076,7 +14088,7 @@ video {
 }
 
 .text-gray-600 {
-  --text-opacity: 1;
+ 
   color: #718096;
   color: rgba(113, 128, 150, var(--text-opacity));
 }
